@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BONSAI HEAVEN.COM </title> 
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>    
+
+	<link rel="stylesheet" type="text/css" href="Style.css">  
+
+
+</head>  
+
+<body> 
+<header>
+    <div style="display: flex; align-items: center;">
+    <img src="The Bonsai Heaven.png" alt="Logo" style="height: 82px;">
+    <h1 style="margin-left: 10px;">The Bonsai Heaven</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="Products.html">Product</a></li>
+      <li><a href="Research.html">Research</a></li>
+      <li><a href="Blogs.html">Blog</a></li>
+      <li><a href="#">About us</a></li>
+    </ul>
+  </nav>
+  </header>
+
+
+<section id="hero">
+	<h4>Bonsai Heaven Presents</h4> 
+	<h2>BEST BONSAI IN MARKET</h2> 
+	<h1>ONLY QUALITY PRODUCTS</h1>  
+	<p>Save more with discount offers & upto 70% off! </p> 
+	<button onclick="window.location.href = 'Products.html'">Buy Now</button> 
+</section> 
+
+<div class="slider">
+    <img src="banner1.jpg" alt="Image 1">
+    <img src="banner2.jpg" alt="Image 2">
+<button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+<button class="next" onclick="plusSlides(1)">&#10095;</button>
+ </div> 
+ <script type="text/javascript">
+   var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slider")[0].getElementsByTagName("img");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].className = slides[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].className += " active";
+}
+
+ </script>
+
+ <section id="newsletter" class="section-p1 section-m1"> 
+	<div class="newstext">
+		<h4>Sign Up For Newsletters</h4> 
+		<p>Get E-mail updates about our latest shop and <span>special offers.</span> 
+			</p> 
+		</div>  
+		<div class="form">
+			<input type="text" placeholder="Your Email Address">   
+			<button class="normal">Sign Up</button>  
+		</div>  
+	</section>  
+
+<section id="feature" class="section-p1"> 
+	<div class="fe-box">
+		<img src="images/f1.png" alt="">  
+		<h6>Free Shipping</h6>  
+	</div>
+	<div class="fe-box">
+		<img src="images/f2.png" alt="">  
+		<h6>Branded Products</h6>  
+	</div>
+	<div class="fe-box">
+		<img src="images/f3.png" alt="">  
+		<h6>Online Order</h6>  
+	</div>
+	<div class="fe-box">
+		<img src="images/f4.png" alt="">  
+		<h6>Save Money</h6>  
+	</div>
+	<div class="fe-box">
+		<img src="images/f5.png" alt="">  
+		<h6>Quality Products</h6>  
+	</div> 
+	<div class="fe-box">
+		<img src="images/f6.png" alt="">  
+		<h6>Support</h6>   
+	</div> 
+</section> 
+
+
+<section id="product1" class="section-p1">
+	<h2>Featured Products</h2> 
+	<p>Best Top Selling Products in Market</p>  
+<div class="pro-container">  
+<div class="pro"> 
+<img src="images/p2.jpg" alt="">  
+<div class="des">
+	<span>Bonsai Heaven</span> 
+	<h5>JUNIPER BONSAI</h5>  
+	<h4>Price: Rs10000</h4> 
+</div> 
+<a href="#"><i class="fal fa-shopping-cart cart"></i></a>  
+</div> 
+<div class="pro"> 
+<img src="images/p5.jpg" alt="">  
+<div class="des"> 
+	<span>Bonsai Heaven</span> 
+	<h5>CHERRY BONSAI</h5> 
+	<h4>Price: Rs80000</h4> 
+</div> 
+<a href="#"><i class="fal fa-shopping-cart cart"></i></a>  
+</div> 
+<div class="pro"> 
+<img src="images/p4.jpg" alt="">  
+<div class="des">
+	<span>Bonsai Heaven</span> 
+	<h5>RED-MAPLE BONSAI</h5> 
+	<h4>Price: Rs70000</h4> 
+</div> 
+<a href="#"><i class="fal fa-shopping-cart cart"></i></a>  
+</div> 
+<div class="pro"> 
+<img src="images/p3.png" alt="">  
+<div class="des">
+	<span>Bonsai Heaven</span> 
+	<h5>SIMPLE BONSAI</h5>  
+	<h4>Price: Rs70000</h4> 
+</div> 
+<a href="#"><i class="fal fa-shopping-cart cart"></i></a>  
+</div> 
+</div> 
+</section>  
+<section id="banner" class="section-m1"> 
+	<h4>SPECIAL DISCOUNT </h4>
+	<h2>Up to <span>70% off</span> - ALL BONSAI PRODUCTS</h2>  
+	<button onclick="window.location.href = 'Products.html'">EXPLORE MORE</button> 
+</section>  
+
+<div class="Description">
+ <h2>Product Page</h2>
+    <p>
+      This page showcases the bonsai products offered by the website. It displays the different bonsai options available for purchase, their prices, and allows the user to add them to their cart.
+      <button onclick="window.location.href = 'Products.html'">Go to product Page</button>
+
+    </p>
+
+
+    <h2>Research Page</h2>
+    <p>
+      This page displays the results of the comparison of components used on the website with those used on other websites during the research process. It provides a contrast of at least 5 different reference websites to give the user an understanding of the research process and its results.
+      <button onclick="window.location.href = 'Research.html'">Go to Research Page</button>
+    </p>
+    
+
+    <h2>Blog Page</h2>
+    <p>
+      This page serves as a platform for the latest news and insights related to technology. The blog posts aim to educate and inform the users about different aspects of tech.
+      <button onclick="window.location.href = 'Blogs.html'">Go to Blog Page</button>
+    </p>
+    
+
+    <h2>About Us Page</h2>
+    <p>
+      This page provides an introduction to the team behind the bonsai business. It includes a detailed portfolio of each team member, including their roles and responsibilities in the company.
+      <button onclick="window.location.href = 'Research.html'">Go to About us Page</button>
+    </p>
+    
+     <style>
+      .Description h2 {
+        font-size: 36px;
+        text-align: center;
+        color: #333;
+        font-weight: bold;
+   
+      }
+      .Description p {
+        font-size: 18px;
+        text-align: center;
+        color: #555;
+        line-height: 1.5;
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+        padding: 40px;
+        background-color: #E7F3E3;
+
+      }
+      .Description button {
+        background-color: #555;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+       
+      }
+      .Description button:hover {
+        background-color: #333;
+      }
+      .Description {
+    background-color:;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+        height: 100%;
+        border: 1px white;
+        padding: 77px;
+    </style>
+</div>
+
+	<footer class="section-p1">  
+		<div class="col">  
+			<img src="images/logo.png" alt="">    
+			<h4>Contact</h4> 
+			<P><Strong>Address: </Strong> 562 Baneshwor, Kathmandu 07, Nepal </P> 
+			<p><Strong>Hours:</Strong> 10:00 - 18:00, Sun - Fri</p>  
+			<div class="icon"> 
+				<i class="fab fa-facebook-f"></i> 
+				<i class="fab fa-instagram"></i> 
+				<i class="fab fa-twitter"></i>  
+				<i class="fab fa-pinterest"></i> 
+				<i class="fab fa-youtube"></i>    
+		</div>   
+	</div>   
+
+
+	<div class="col"> 
+		<h4>About</h4> 
+		<a href="#">About us</a> 
+		<a href="#">Delivery Information</a> 
+		<a href="#">Privacy Policy</a>  
+		<a href="#">Terms and Condition</a>  
+		<a href="#">Contact Us</a>  
+	</div> 
+
+
+<div class="col"> 
+		<h4>My Account</h4> 
+		<a href="#">Sign In</a> 
+		<a href="#">View Cart</a> 
+		<a href="#">My Wishlist</a>  
+		<a href="#">Track My Order</a>  
+		<a href="#">Help</a>   
+	</div> 
+
+	</footer>   
+
+</body>
+</html> 

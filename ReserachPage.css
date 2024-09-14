@@ -1,0 +1,89 @@
+/* Add your desired font and font size for the entire website here */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Style the header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10px 10px;  
+  background: #e3e7f3; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.06);   
+  z-index: 999;   
+  position:sticky;
+  top:0;
+  left:0; 
+}
+
+
+/* Style the navigation menu */
+nav {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position:sticky;
+     top:0;
+     left:0; 
+     background: #e3e7f3; 
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position:sticky;
+}
+
+nav li {
+   list-style: none; 
+      padding: 0 20px;  
+      position: STICKY;
+      font-size: 1.rem;
+}
+
+nav a {
+  display: block;
+    align-items: center; 
+    justify-content: center; 
+    position:sticky;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+  color: #6D214F;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Style the main content */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #E3E3E3;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+
+* {
+  margin: auto;  
+  padding:0; 
+  box-sizing: border-box; 
+  font-family: 'Poppins', sans-serif;  
+
+}

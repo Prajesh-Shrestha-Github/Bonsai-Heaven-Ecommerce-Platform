@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+  <style>
+    * {
+  margin: 0;  
+  padding:0; 
+  box-sizing: border-box; 
+  font-family: 'Poppins', sans-serif;  
+
+}
+
+    header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10px 10px;  
+  background: #e3e7f3; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.06);   
+  z-index: 999;   
+  position:sticky;
+  top:0;
+  left:0; 
+}
+    form {
+      width: 601px;
+      margin: auto;
+      padding: 98px;
+      border: 2px solid #ddd;
+      border-radius: 130px;
+      box-shadow: 2px 2px 10px #ccc;
+      text-align: center;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid gray;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    input[type="radio"] {
+      margin-right: 20px;
+    }
+
+    nav {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position:sticky;
+     top:0;
+     left:0; 
+     background: #e3e7f3; 
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position:sticky;
+}
+
+nav li {
+   list-style: none; 
+      padding: 0 20px;  
+      position: STICKY;
+      font-size: 1.rem;
+}
+
+nav a {
+  display: block;
+    align-items: center; 
+    justify-content: center; 
+    position:sticky;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+  color: #6D214F;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #E3E3E3;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+   <header>
+    <div style="display: flex; align-items: center;">
+    <img src="The Bonsai Heaven.png" alt="Logo" height="82px">
+    <h1 style="margin-left: 10px;">Buy now | Feedback Form | The Bonsai Heaven |</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="Bonsai.html">Home</a></li>
+      <li><a href="Products.html">Product</a></li>
+      <li><a href="Research.html">Research</a></li>
+      <li><a href="Blogs.html">Blog</a></li>
+      <li><a href="#">About us</a></li>
+    </ul>
+  </nav>
+  </header>
+  <form name="myform" onsubmit="validateForm()">
+    <p>First name:<input type="text" name="firstname"></p>
+    <p>Last name:<input type="text" name="lastname"></p>
+    <p>Gender:
+      <input type="radio" name="gender" value="male" checked> Male
+      <input type="radio" name="gender" value="female"> Female
+    </p>
+    <p>Comment:<textarea name="comment" rows="8" cols="20"></textarea></p>
+    <p><input type="submit" value="Send"></p>
+  </form>
+</body>
+
+<script type="text/javascript">
+function validateForm() {
+  var fname = document.forms["myform"]["firstname"].value;
+  var lname = document.forms["myform"]["lastname"].value;
+  var comment = document.forms["myform"]["comment"].value;
+  if (fname==""|| lname=="") {
+    alert("Empty field found!")
+  }
+  else
+  {
+    alert("Thank you for your feedback. Your Products in the cart will be sent to order now.")
+  }
+}
+
+</script>
+<footer class="section-p1">  
+    <div class="col">  
+      <img src="images/logo.png" alt="">    
+      <h4>Contact</h4> 
+      <P><Strong>Address: </Strong> 562 Baneshwor, Kathmandu 07, Nepal </P> 
+      <p><Strong>Hours:</Strong> 10:00 - 18:00, Sun - Fri</p>  
+      <div class="icon"> 
+        <i class="fab fa-facebook-f"></i> 
+        <i class="fab fa-instagram"></i> 
+        <i class="fab fa-twitter"></i>  
+        <i class="fab fa-pinterest"></i> 
+        <i class="fab fa-youtube"></i>    
+    </div>   
+  </div>   
+
+
+  <div class="col"> 
+    <h4>About</h4> 
+    <a href="#">About us</a> 
+    <a href="#">Delivery Information</a> 
+    <a href="#">Privacy Policy</a>  
+    <a href="#">Terms and Condition</a>  
+    <a href="#">Contact Us</a>  
+  </div> 
+
+
+<div class="col"> 
+    <h4>My Account</h4> 
+    <a href="#">Sign In</a> 
+    <a href="#">View Cart</a> 
+    <a href="#">My Wishlist</a>  
+    <a href="#">Track My Order</a>  
+    <a href="#">Help</a>   
+  </div> 
+
+  </footer>   
+</html>

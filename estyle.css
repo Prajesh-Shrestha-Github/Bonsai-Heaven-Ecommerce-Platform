@@ -1,0 +1,187 @@
+/* Add your desired font and font size for the entire website here */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Style the header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10px 10px;  
+  background: #e3e7f3; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.06);   
+  z-index: 999;   
+  position:sticky;
+  top:0;
+  left:0; 
+}
+
+h2 {
+    display: block;
+    font-size: 1.27em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+/* Style the navigation menu */
+nav {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position:sticky;
+     top:0;
+     left:0; 
+     background: #e3e7f3; 
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position:sticky;
+}
+
+nav li {
+   list-style: none; 
+      padding: 0 20px;  
+      position: STICKY;
+      font-size: 1.rem;
+}
+
+nav a {
+  display: block;
+    align-items: center; 
+    justify-content: center; 
+    position:sticky;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+  color: #6D214F;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Style the main content */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+/* Slider */
+.slider {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.slider img.active {
+  display: block;
+}
+
+/*Slider navigation buttons*/
+.prev {
+  cursor: pointer;
+  left: 7%;
+  position:absolute ;
+  top: 46%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color:#9c9082;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  }
+
+.next {
+  right: 7%;
+  cursor: pointer;
+  position:absolute ;
+  top: 46%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color:#9c9082;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Style the individual product boxes */
+.product {
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+}
+
+.product img {
+  width: 100%;
+}
+
+
+.product p {
+  line-height: 1.5;
+}
+
+.product button {
+  background-color: #333;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.price {
+  text-decoration: line-through;
+}
+
+.product:hover .expand {
+  display: block;
+}
+
+.expand {
+  display: none;
+}
+/* Style the footer */
+footer {
+  background-color: #E3E3E3;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+
+* {
+  margin: 0;  
+  padding:0; 
+  box-sizing: border-box; 
+  font-family: 'Poppins', sans-serif;  
+
+}

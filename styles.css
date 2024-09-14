@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-image: url(.6.jfif);
+  backdrop-filter: blur(3px);
+  background-size: contain;
+  width: 100%;
+  height: 100%; 
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10px 10px;  
+  background: #e3e7f3; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.06);   
+  z-index: 999;   
+  position:sticky;
+  top:0;
+  left:0; 
+}
+
+h1{
+  text-align: center;
+}
+
+ h2, h3{
+  text-align: center;
+  color: #fff;
+}
+
+
+
+.wrapper{
+  margin: 50px auto;
+  width: 100%;
+}
+
+.imgf{
+  max-width: 400px;
+ 
+  float: left;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  margin: 15px;
+} 
+
+.text-box h2{
+  font-size: 42px;
+}
+
+.text-box p, li{
+  font-size: 16px;
+  color: #fff;
+}
+
+.wrappe2{
+  margin: 250px auto;
+  width: 100%;
+}
+
+.imgs{
+  max-width: 450px;
+  float: right;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  margin: 45px;
+}
+
+.wrappe3{
+  margin: 5px auto;
+  width: 1000px;
+}
+
+.imgt{
+  max-width: 100%;
+  float: left;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  margin: 40px;
+}
+
+.banner{
+  background-image: url(.8.jfif);
+  backdrop-filter: blur(3px);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  ;
+  
+  
+}
+
+section {
+  padding: 5px;
+}
+
+nav {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position:sticky;
+     top:0;
+     left:0; 
+     background:#e3e7f3; 
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position:sticky;
+}
+
+nav li {
+   list-style: none; 
+      padding: 0 20px;  
+      position: STICKY;
+      font-size: 1.rem;
+}
+
+nav a {
+  display: block;
+    align-items: center; 
+    justify-content: center; 
+    position:sticky;
+    text-decoration: none;
+}
+
+footer {
+  background-color: #E3E3E3;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+  color: #6D214F;
+  text-decoration: underline;
+  font-weight: bold;
+}
